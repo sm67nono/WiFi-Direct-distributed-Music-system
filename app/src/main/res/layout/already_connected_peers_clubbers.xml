@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bg_connected"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:textColor="@android:color/white"
+      android:text="My Details"
+      android:id="@+id/serverDetails"
+      android:textAlignment="center"
+      android:background="@color/colorBar"
+      android:fontFamily="sans-serif"
+      android:textSize="18sp" />
+
+  <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="@drawable/bg_mydetails"
+        android:padding="3dip">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="1dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+
+          <TextView
+            android:id="@+id/my_name"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/my_status"
+                android:layout_width="fill_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:text="Currently Connected Host"
+        android:background="@color/colorBar"
+        android:textAlignment="center"
+      android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Available peers -->
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+  <TextView
+    android:id="@id/android:empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:text="No Hosts Nearby"
+    android:textColor="@android:color/white"
+    android:textSize="16sp" />
+
+</LinearLayout>

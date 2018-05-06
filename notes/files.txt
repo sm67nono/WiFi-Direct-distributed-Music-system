@@ -1,0 +1,10 @@
+mainactivity_clubber.xml is the main page.
+
+PAge on click of 'party' button :already_Connected_peers_clubbers
+PAge on click of 'host' button :already_Connected_peers_host
+
+'playlists' tab on Host  : 
+top section :uihost_playlist
+bottomsection :uihost_playlist_item 
+
+'to select songs from sd card , when you click on no:songs (checkboxed list') : uihost_allsongs_playlist_item
